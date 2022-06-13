@@ -1,0 +1,10 @@
+version: "3.0"
+
+services:
+  spark:
+    build: ./dockers/spark
+    ports:
+      - 127.0.0.1:8000:8000
+    volumes:
+      - ./notebook:/notebook
+    # command: sh /opt/jupyter_run.sh
