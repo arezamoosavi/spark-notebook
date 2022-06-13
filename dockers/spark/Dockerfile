@@ -1,4 +1,4 @@
-FROM openjdk:11-jre-slim
+FROM openjdk:11.0-jdk-buster
 
 RUN apt update -y && apt install -y libzbar-dev bash make gcc git libc-dev less curl wget vim nano \
     && apt install -y iputils-ping telnet openssh-client net-tools \
